@@ -9,9 +9,26 @@ Pupil
 Result
 	id
 	pupil_id
-	year_id
-	Score
 	subject_id
+	cycle_id
+	resulttype_id
+	value
+
+Resulttype	[Teacher Assesment, Test Score, Grade (A-F), Next Step Target]
+	id
+	name
+
+
+Cycle [A simple text tag]
+	id
+	name [1, 2, 3, 4]
+
+
+Comment
+	id
+	result_id
+	teacher_id
+	created
 
 Subject
 	id
@@ -29,6 +46,9 @@ Progress
 	comparison_result_id
 	value
 
+Cycle
+	id
+	name
 
 Year
 	id
